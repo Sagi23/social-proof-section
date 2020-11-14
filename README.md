@@ -9,9 +9,9 @@ html, scss/css
 Created the mockup using html and scss with mobile first in mind.
 
 ### What i learned:
-Improved scss skills.
-Improved css grid skills.
-Improved html slills.
+Improved scss skills.  
+Improved css grid skills.  
+Improved html slills.  
 
 ### The mockup:
 
