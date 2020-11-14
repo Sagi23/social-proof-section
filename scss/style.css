@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+html {
+  width: 100%;
+  height: 100vh;
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  background-image: url(/images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+  margin: 5em auto;
+  width: 100%;
+}
+
+.header {
+  width: 80%;
+  color: #502050;
+  font-weight: 700;
+}
+
+.intro {
+  width: 95%;
+  color: #937b92;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+
+.rating {
+  background-color: #f7f2f7;
+  width: 95%;
+  margin: 1em 0 0.5em;
+  border-radius: 1em;
+  padding: 1em 0.1em;
+  font-weight: 700;
+  color: #502050;
+}
+
+.rating p {
+  margin: 0;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.2rem;
+  padding-bottom: 0.5em;
+}
+
+.container {
+  width: 95%;
+}
+
+.reviews {
+  background-color: #502050;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.1fr 3fr;
+      grid-template-columns: 0.1fr 3fr;
+  -ms-grid-rows: 0.1fr 1fr;
+      grid-template-rows: 0.1fr 1fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 2em 3em 2em;
+  margin: 2.5em 0 0;
+  text-align: left;
+  border-radius: 1em;
+}
+
+.reviews img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  border-radius: 50%;
+  margin-right: 2em;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.reviews .name-review {
+  font-weight: 700;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.reviews .verified-review {
+  color: #ee68a4;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-top: 2em;
+}
+
+.reviews .quote {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.attribution {
+  text-align: center;
+  font-weight: 700;
+}
+
+.attribution a {
+  color: blue;
+}
+
+@media (min-width: 1440px) {
+  html {
+    background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 0 left 20%, 52% 100%;
+  }
+  .main-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    text-align: left;
+    width: 70%;
+  }
+  .header {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .header h1 {
+    width: 70%;
+    margin: 0;
+    margin-top: 0.3em;
+  }
+  .intro {
+    -ms-grid-column-align: left;
+        justify-self: left;
+    width: 80%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    font-size: 1.5rem;
+    margin-top: 0em;
+  }
+  .rating {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.3fr 0.5fr;
+        grid-template-columns: 0.3fr 0.5fr;
+    width: 71%;
+    -ms-grid-row-align: start;
+        align-self: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rating1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-left: -10em;
+  }
+  .rating2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-top: 7em;
+    margin-left: 0em;
+  }
+  .rating3 {
+    margin-left: 10em;
+  }
+  .stars {
+    width: auto;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .r {
+    width: 100%;
+    padding-left: 1em;
+  }
+  .container {
+    width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+  }
+  .container .reviews {
+    margin: 1em;
+  }
+  .container .review1 {
+    margin-left: 0;
+    margin-bottom: 6em;
+    margin-top: 0;
+  }
+  .container .review2 {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  .container .review3 {
+    margin-top: 6em;
+    margin-bottom: 0em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
